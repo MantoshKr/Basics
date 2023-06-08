@@ -1,0 +1,80 @@
+
+/* background-color
+background-image
+background-position
+background-size
+background-repeat
+background-origin
+background-clip
+background-attachment */
+/* body{
+  background-image:url('image/01.jpg') ;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  background-size: 100% 700%;
+ 
+} */
+
+/* body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('image/64869908_066_553a.jpg');
+  opacity: 0.5;
+} */
+
+.background-image{
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-image: url('image/01.jpg') , url('image/02.jpg') , url('image/03.jpg');
+  opacity: 0.3; /* Adjust the opacity value (0.5 in this example) to set the transparency */
+  z-index: -1; /* Ensure the background image is behind the content */
+  /* background-size: contain;
+  background-repeat: no-repeat; */
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: left top , top right , center ;
+  background-size: contain , contain , contain;
+}
+
+
+.bg-img{
+  content: "";
+  top: 0;
+  left: 0;
+  width: 30%;
+  height: 30%;
+  position: fixed;
+ background-image: url('image/04.jpg');
+ background-position-x :25% ;
+ background-repeat: no-repeat;
+ background-size: contain;
+ z-index: -1;
+ overflow: scroll;
+
+}
+
+
+
+
+h1 {
+  
+    background-color: green;
+    color : rgb(85, 17, 17);
+    color : rgba(13, 80, 10, 0.4);
+    color : rgba(27, 25, 99, 1);
+  }
+
+  p{
+    color : rgb(11, 3, 3);
+    background-color: rgba(255, 25, 99, 0.3);
+    width:5%;
+
+  }
+
