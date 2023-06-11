@@ -34,7 +34,7 @@ background-attachment */
   height: 100%;
   position: fixed;
   background-image: url('image/01.jpg') , url('image/02.jpg') , url('image/03.jpg');
-  opacity: 0.3; /* Adjust the opacity value (0.5 in this example) to set the transparency */
+  opacity: 0.3; /* Adjust the opacity value to set the transparency */
   z-index: -1; /* Ensure the background image is behind the content */
   /* background-size: contain;
   background-repeat: no-repeat; */
