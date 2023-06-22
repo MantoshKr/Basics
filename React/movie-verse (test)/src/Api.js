@@ -1,4 +1,4 @@
-const api_key='6d047f7208cab6f0af5d4d6c72584191'
+const api_key=process.env.REACT_APP_API_KEY;
 
 
 // const api = {  

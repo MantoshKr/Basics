@@ -20,8 +20,8 @@ import React from 'react'
 
 const Navbar = () => {
   return (
-    <div className="bg-gray-800 py-4 px-8 flex justify-between items-center">
-      <h1 className="text-white font-bold text-2xl">MovieVerse</h1>
+    <div className="fixed bg-white flex item-center justify-between p-1 z-[100] w-full">
+      <h1 className="text-yellow-600 font-bold text-2xl">MovieVerse</h1>
 
       <div>
         <button className="bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded mr-2">

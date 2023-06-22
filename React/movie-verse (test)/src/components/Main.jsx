@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import axios from 'axios' //import axios
 import { useEffect } from 'react' //import useEffect
+import api from '../Api';
+
 
 
 
@@ -20,7 +22,7 @@ const Main = () => {
 
 
   useEffect(() => {
-    axios.get('https://api.themoviedb.org/3/movie/popular?api_key=6d047f7208cab6f0af5d4d6c72584191&language=en-US&page=1')
+    axios.get(api.apiPopular)
     .then((res) => {
       console.log(res.data.results)
       setMovies(res.data.results)
