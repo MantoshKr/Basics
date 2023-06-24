@@ -3,6 +3,10 @@ import React from 'react'
 import Home from './Pages/Home';
 import {  BrowserRouter, Route , Routes } from 'react-router-dom';
 import { AuthContextProvider } from './context/AuthContext';
+import Login from './Pages/Login';
+import Signup from './Pages/Signup';
+import Account from './Pages/Account';
+import Navbar from './components/Navbar';
 
 
 const App = () => {
@@ -10,8 +14,12 @@ const App = () => {
     <>
      <BrowserRouter>
     <AuthContextProvider>
+    <Navbar />
     <Routes>
       <Route path="/" element={<Home />}/>
+      <Route path="Login" element={<Login />}/>
+      <Route path="Signup" element={<Signup />}/>
+      <Route path="Account" element={<Account />}/>
     </Routes>
     </AuthContextProvider>
     </BrowserRouter>
