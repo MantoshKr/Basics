@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Analog Clock</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    .clock {
+      width: 200px;
+      height: 200px;
+      position: relative;
+      border-radius: 50%;
+      border: 2px solid #000;
+    }
+
+    .hour-hand,
+    .minute-hand,
+    .second-hand {
+      background-color: #000;
+      position: absolute;
+      transform-origin: bottom center;
+    }
+
+    .hour-hand {
+      width: 6px;
+      height: 70px;
+      top: 50%;
+      left: 97px;
+      margin-top: -70px;
+      border-radius: 4px 4px 0 0;
+    }
+
+    .minute-hand {
+      width: 4px;
+      height: 90px;
+      top: 50%;
+      left: 98px;
+      margin-top: -90px;
+      border-radius: 4px 4px 0 0;
+    }
+
+    .second-hand {
+      width: 2px;
+      height: 100px;
+      top: 50%;
+      left: 99px;
+      margin-top: -100px;
+      border-radius: 4px 4px 0 0;
+      background-color: #FF0000;
+    }
+  </style>
+</head>
+
+<body class="flex items-center justify-center min-h-screen bg-gray-100">
+  <div class="clock">
+    <div class="hour-hand"></div>
+    <div class="minute-hand"></div>
+    <div class="second-hand"></div>
+  </div>
+
+  <script>
+    function rotateClockHands() {
+      const secondHand = document.querySelector('.second-hand');
+      const minuteHand = document.querySelector('.minute-hand');
+      const hourHand = document.querySelector('.hour-hand');
+
+      const date = new Date();
+      const seconds = date.getSeconds();
+      const minutes = date.getMinutes();
+      const hours = date.getHours();
+
+      const secondRotation = 6 * seconds;
+      const minuteRotation = 6 * minutes + secondRotation / 60;
+      const hourRotation = 30 * (hours % 12) + minuteRotation / 12;
+
+      secondHand.style.transform = `rotate(${secondRotation}deg)`;
+      minuteHand.style.transform = `rotate(${minuteRotation}deg)`;
+      hourHand.style.transform = `rotate(${hourRotation}deg)`;
+    }
+
+    setInterval(rotateClockHands, 1000);
+  </script>
+</body>
+
+</html>
