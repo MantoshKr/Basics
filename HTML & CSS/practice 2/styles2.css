@@ -1,0 +1,230 @@
+/* html{
+    font-size: 62.5%;
+}
+
+ */
+
+
+
+.main-block {
+    font-size: 1.6rem;
+font-weight: 30.0;
+height: 44rem;
+width: 33.4rem;
+border: .1rem solid  #E8E8E8;
+padding: 1.0rem 1.0rem 1.0rem 1.0rem;
+/* outline: rgb(255, 0, 0) dashed 1rem; */
+display: block;
+box-shadow: rgba(28, 28, 28, 0.12) 0rem .4rem 1.8rem 0rem;
+border-top-left-radius: 1.5rem;
+border-top-right-radius: 1.5rem;
+border-bottom-right-radius: 1.5rem;
+border-bottom-left-radius: 1.5rem;
+color:  #000000;
+background-position: 0% 0%;
+}
+
+.image-block{
+    font-size: 1.6rem;
+font-weight: 30.0;
+text-decoration: underline solid rgb(0, 0, 238);
+background-color:  #FFFFFF;
+background-position: 0% 0%;
+color:  #0000EE;
+height: 24.8rem;
+width: 32.8rem;
+position: relative;
+top: 0rem;
+bottom: 0rem;
+right: 0rem;
+left: 0rem;
+display: block;
+cursor: pointer;
+/* outline: rgb(255, 0, 0) dashed 1rem; */
+box-sizing: border-box;
+}
+
+.image{
+    height: 24.8rem;
+width: 32.8rem;
+display: inline;
+overflow: clip;
+cursor: pointer;
+transform: none;
+transition: opacity 0.25s ease 0s, transform 0.25s ease 0s;
+/* outline: rgb(255, 0, 0) dashed 1rem; */
+box-sizing: border-box;
+border-top-left-radius: 1.5rem;
+border-top-right-radius: 1.5rem;
+border-bottom-right-radius: 1.5rem;
+border-bottom-left-radius: 1.5rem;
+position: absolute;
+
+}
+
+.second-main-block{
+    font-family: Okra, Helvetica, sans-serif;
+font-size: 1.6rem;
+font-weight: 30.0;
+text-decoration: none solid rgb(0, 0, 238);
+word-spacing: 0rem;
+background-color:  #FFFFFF;
+background-position: 0% 0%;
+/* color:  #0000EE; */
+height: 13.0391rem;
+width: 32.8rem;
+display: block;
+cursor: pointer;
+/* outline: rgb(255, 0, 0) dashed 1rem; */
+box-sizing: border-box;
+}
+
+.row-1,.row-2,.row-3,.safety {
+    font-family: Okra, Helvetica, sans-serif;
+font-size: 1.4rem;
+font-weight: 30.0;
+line-height: 1.7rem;
+text-decoration: none solid rgb(0, 0, 238);
+word-spacing: 0rem;
+height: 3..43906rem;
+width: 32.8rem;
+display: flex;
+cursor: pointer;
+transform: none;
+transition: all 0s ease 0s;
+/* outline: rgb(255, 0, 0) dashed 1rem; */
+box-sizing: border-box;
+justify-content: space-between;
+
+
+}
+
+
+.dash{
+    background-color:  #E8E8E8;
+    height: .1rem;
+width: 32.8rem;
+margin: 1.0rem 0 .5rem 0;
+}
+
+
+ .icon{
+    height: 1.8rem;
+width: 4.8rem;
+display: inline;
+overflow: clip;
+cursor: pointer;
+}
+
+.safety-text{
+    font-family: Okra, Helvetica, sans-serif;
+font-size: 1.2rem;
+line-height: 1.7rem;
+text-decoration: none solid rgb(130, 130, 130);
+text-align: left;
+word-spacing: 0rem;
+color:  #828282;
+height: 3.4rem;
+width: 27.0rem;
+margin: 0 0 0 10rem;
+min-height: auto;
+min-width: auto;
+display: -webkit-box;
+transition: all 0s ease 0s;
+/* outline: rgb(255, 0, 0) dashed 1rem; */
+box-sizing: border-box;
+text-overflow: ellipsis;
+overflow: hidden;
+cursor: pointer;
+
+}
+
+
+.img-text{
+    font-family: Okra, Helvetica, sans-serif;
+font-size: 1.4rem;
+line-height: 1.8rem;
+text-decoration: none solid rgb(255, 255, 255);
+white-space: nowrap;
+word-spacing: 0rem;
+background-color:  #256FEF;
+background-position: 0% 0%;
+color:  #FFFFFF;
+height: 1.8rem;
+width: 14.1234rem;
+padding: 0 .6rem 0 6rem;
+max-width: 100%;
+display: block;
+overflow: hidden;
+cursor: pointer;
+transform: none;
+transition: all 0s ease 0s;
+outline: rgb(255, 0, 0) dashed .1rem;
+box-sizing: border-box;
+text-overflow: ellipsis;
+/* border-top-right-radius: 2rem; */
+border-bottom-right-radius: .2rem;
+position: absolute;
+top: 80%;
+}
+
+
+
+
+
+
+
+/* Extra Small (XS) */
+@media (max-width: 576px) {
+    html {
+      font-size: 35%; /* 55% of the default font size (10px) */
+    }
+  }
+  
+  /* Small (SM) */
+  @media (min-width: 576px) and (max-width: 768px) {
+    html {
+      font-size: 60%; /* 60% of the default font size (10px) */
+    }
+  }
+  
+  /* Medium (MD) */
+  @media (min-width: 768px) and (max-width: 992px) {
+    html {
+      font-size: 62.5%; /* 65% of the default font size (10px) */
+    }
+  }
+  
+  /* Large (LG) */
+  @media (min-width: 992px) and (max-width: 1200px) {
+    html {
+      font-size: 70%; /* 70% of the default font size (10px) */
+    }
+  }
+  
+  /* Extra Large (XL) */
+  @media (min-width: 1200px) {
+    html {
+      font-size: 75%; /* 75% of the default font size (10px) */
+    }
+  }
+  
+
+  @media (min-width: 1400px) {
+    html {
+      font-size: 85%; /* 75% of the default font size (10px) */
+    }
+  }
+  
+
+  @media (min-width: 1600px) {
+    html {
+      font-size: 93%; /* 75% of the default font size (10px) */
+    }
+  }
+
+  @media (min-width: 1900px) {
+    html {
+      font-size: 100%; /* 75% of the default font size (10px) */
+    }
+  }
