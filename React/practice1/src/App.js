@@ -1,7 +1,12 @@
-function MyComponent ({ name }) {
-  return <div className='message-box'>
-    Hello {name}
-  </div>
+import React from 'react'
+import Customtags from './components/Customtags'
+
+const App = () => {
+  return (
+    <div>
+    <Customtags />
+    </div>
+  )
 }
 
-export default MyComponent;
+export default App

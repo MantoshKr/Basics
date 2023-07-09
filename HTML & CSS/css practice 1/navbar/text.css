@@ -1,0 +1,41 @@
+nav {
+    background-color: #283e4a;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .navbar-logo img {
+    height: 30px;
+  }
+  
+  .navbar-search input {
+    padding: 5px;
+    width: 200px;
+    border-radius: 3px;
+    border: none;
+  }
+  
+  .navbar-links a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10px;
+  }
+  
+  .navbar-status img {
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+    border-radius: 50%;
+  }
+  
+  .online-status {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #4caf50;
+    border-radius: 50%;
+  }
+
+
+  
