@@ -1,0 +1,167 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    with:720px
+    
+  }
+  
+  .main-container{
+    display:flex;
+    width:100%;
+    justify-content:space-between;
+    align-items:center;
+    height:60px;
+    padding:0.5%;
+     box-sizing: border-box;
+  /*   box-shadow: 1px 1px 1px black; */
+    background-color:  #2874F0 ;
+    border: 1px solid  #f3f3f3 ;
+    margin-top:0;
+    
+   
+  }
+  
+  .first-item{
+  /*  margin-left:400px;
+    margin-right:20px; */
+    margin-left:20%;
+    margin-right:0.5%;
+    color:white;
+    font-weight:600;
+    font-size:20px;
+  }
+  
+  
+  .first-item div:last-child{
+    font-size:10px;
+    font-weight:500;
+  }
+  
+  
+  .second-item{
+    
+    margin:2px;
+  width:100%
+  }
+  
+  .side-items{
+    
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-right:20%;
+    color:white;
+    font-weight:600;
+  }
+  
+  .second-item input{
+    width:100%;
+      padding:8px 10px;
+    min-width:120px;
+    
+  }
+  
+  .second-item input:focus {
+    outline: none;
+  }
+  
+  .side-items div{
+    width:100%;
+    margin:0 35px ;
+    
+  }
+  
+  .side-items div:first-child{
+    padding:5px 35px;
+    background-color:white;
+    color: #2874F0;
+    font-weight:600;
+    
+  }
+  
+  
+  @media screen and (max-width: 1436px) {
+    .side-items div:first-child{
+      display:none;
+    }
+    .second-item input{
+     width:250px;
+      padding:8px 10px;
+    min-width:120px;
+    
+  }
+    
+  }
+  
+  @media screen and (max-width: 1108px) {
+  .seller{
+      display:none;
+    }
+    .second-item input{
+     width:250px;
+    }
+      .main-container{
+    display:flex;
+    width:100%;
+    justify-content:space-between;
+    align-items:center;
+    height:60px;
+    padding:2px;
+     box-sizing: border-box;
+  /*   box-shadow: 1px 1px 1px black; */
+    background-color:  #2874F0 ;
+    border: 1px solid  #f3f3f3 ;
+    margin-top:0;
+    
+   
+  }
+  }
+  
+  @media screen and (max-width: 856px) {
+  .more{
+      display:none;
+    }
+    .second-item input{
+     width:250px;
+    }
+    
+  .side-items{
+    
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-right:20px;
+    color:white;
+    font-weight:600;
+  }
+    .first-item{
+  /*  margin-left:400px;
+    margin-right:20px; */
+    margin-left:20px;
+    margin-right:1px;
+    color:white;
+    font-weight:600;
+    font-size:20px;
+  }
+  
+  
+  
+  }
+  
+  @media screen and (max-width: 664px) {
+  .cart{
+      display:none;
+    }
+    .second-item input{
+      width:250px;}
+  }
+  
+  @media screen and (max-width: 500px) {
+  .first-item{
+      display:none;
+    }
+    .second-item input{
+      width:250px;}
+  
+  }
